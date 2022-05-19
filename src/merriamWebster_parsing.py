@@ -34,19 +34,21 @@ class ParserMW:
                               '?key=' + self.auth_key)
         result = result.json()
         try:
+            # TODO adapt to cards
             returnDict = {
                 "word": word,
                 "definition": result[0]['shortdef'][0],
                 "type": result[0]['fl'],
-                "offensive": str(result[0]['meta']['offensive'])
+                # "offensive": str(result[0]['meta']['offensive'])
             }
         except:
-            returnDict = {
-                "word": word,
-                "definition": "N/A",
-                "type": "N/A",
-                "offensive": "N/A"
-            }
+            return dict()
+            # returnDict = {
+            #     "word": word,
+            #     "definition": "N/A",
+            #     # "type": "N/A",
+            #     # "offensive": "N/A"
+            # }
         return returnDict
 
 # response format
