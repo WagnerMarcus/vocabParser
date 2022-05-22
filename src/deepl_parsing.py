@@ -10,7 +10,8 @@ import deepl
 
 # Create a Translator object providing your DeepL API authentication key.
 # Be careful not to expose your key, for example when sharing source code.
-auth_key = "d8975eb7-c026-7890-5f41-a89e825b732c:fx"
+# TODO read auth key from config file
+auth_key = ''
 
 
 translator = deepl.Translator(auth_key)

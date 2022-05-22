@@ -8,7 +8,7 @@ author: marcus.wagner@tum.de
 
 import requests
 
-# authentication keys
+# #TODO: read authentication keys from config file
 auth_key_en = "111b176f-3472-4e30-9dab-d672c4183389"
 auth_key_es = "36a65f71-eb84-4a85-8a05-b22de265f4b2"
 
